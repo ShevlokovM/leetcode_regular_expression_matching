@@ -18,8 +18,6 @@ public class RegExMatching
     {
         try
         {
-            System.out.println("regex = " + p);
-            System.out.println("input = " + s);
             Pattern pt = Pattern.compile(p);
             Matcher m = pt.matcher(s);
             while(m.find()) 
