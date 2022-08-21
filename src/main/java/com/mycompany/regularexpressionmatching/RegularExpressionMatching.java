@@ -5,6 +5,11 @@
 
 package com.mycompany.regularexpressionmatching;
 
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.Scanner;
+
 /**
  *
  * @author 111
@@ -13,5 +18,23 @@ public class RegularExpressionMatching {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
+        
+        Scanner scanner = new Scanner(System.in);
+        RegExMatching regExMatching = new RegExMatching();
+        
+        System.out.println("Input string: ");
+        String str = scanner.next();
+        
+        System.out.println("Input pattern: ");
+        String ptr = scanner.next();
+        
+        if(regExMatching.isMatch(str, ptr))
+        {
+            System.out.println("true");
+        }
+        else
+        {
+            System.out.println("false");
+        }
     }
 }
