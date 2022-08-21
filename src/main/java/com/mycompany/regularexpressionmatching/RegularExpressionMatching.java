@@ -16,9 +16,8 @@ import java.util.Scanner;
  */
 public class RegularExpressionMatching {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-        
+    public static void main(String[] args) 
+    {
         Scanner scanner = new Scanner(System.in);
         RegExMatching regExMatching = new RegExMatching();
         
